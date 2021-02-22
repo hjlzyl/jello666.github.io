@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天气查询</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/kd.js"></script>
+    <style>
+        form{
+        text-align: center;
+        margin:70px auto
+    }
+    .btn-lg, .btn-group-lg > .btn{
+        padding: 4px 14px
+    }
+    .modal-body div {
+        font-size: 11px;
+        color:#d5ebf7
+    }
+    .modal-body {
+        background:#383c0775
+    }
+    .row{
+        margin-right: 0px;
+        margin-left: 0px
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="sign in">
+                    <div class="input-group-addon">weather</div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                search
+            </button>
+
+        </form>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">天气详情</h4>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-xs-2 c1"></div>
+                    <div class="col-xs-2 c2"></div>
+                    <div class="col-xs-2 c3"></div>
+                    <div class="col-xs-2 c4"></div>
+                    <div class="col-xs-2 c5 "></div>
+                    <div class="col-xs-2 " style="padding:45px 0 ;font-size:17px">就是如此~</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
